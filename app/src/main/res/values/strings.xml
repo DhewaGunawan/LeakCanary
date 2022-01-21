@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Pokemon</string>
+    <string name="api_url">https://beta.pokeapi.co/graphql/v1beta</string>
+    <string name="sprite_url">https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/%1$d.png</string>
 </resources>
