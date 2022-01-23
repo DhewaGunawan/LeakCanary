@@ -1,4 +1,4 @@
-package app.beta.pokemon.appdatabase.favorite
+package app.beta.pokemon.repository.db.favorite
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

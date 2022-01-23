@@ -1,5 +1,5 @@
-query getPokemon($offset: Int ) {
-    pokemon_v2_pokemon(limit: 50, offset: $offset) {
+query getPokemon {
+    pokemon_v2_pokemon {
         id
         name
     }
