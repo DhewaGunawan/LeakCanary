@@ -2,4 +2,22 @@
     <string name="app_name">Pokemon</string>
     <string name="api_url">https://beta.pokeapi.co/graphql/v1beta</string>
     <string name="sprite_url">https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/%1$d.png</string>
+    <string name="by_betavian">by BETAVIAN</string>
+    <string name="placeholder_number">000</string>
+    <string name="static_hashtag">#</string>
+    <string name="static_add_to_favorite">Add to Favorite</string>
+    <string name="static_remove_from_favorite">Remove From Favorite</string>
+    <string name="static_habitat">Habitat :</string>
+    <string name="static_type">Type :</string>
+    <string name="static_skill">Skill :</string>
+    <string name="placeholder_habitat">POKEMON_HABITAT</string>
+    <string name="static_favorite_pokemons">FAVORITE POKEMONS</string>
+    <string name="static_previous">PREVIOUS</string>
+    <string name="static_next">NEXT</string>
+    <string name="placeholder_pokemon_id">pokemon_id</string>
+    <string name="placeholder_pokemon_name">pokemon_name</string>
+    <string name="application_logo">application_logo</string>
+    <string name="pokemon_sprite">pokemon sprite</string>
+    <string name="favorites">favorites</string>
+    <string name="placeholder_item_name">item_name</string>
 </resources>

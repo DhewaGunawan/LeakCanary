@@ -13,6 +13,6 @@
     <color name="pokemon_gold">#FFB3A125</color>
     <color name="favorite">#FFFF008A</color>
     <color name="infavorite">#FF777777</color>
-    <color name="favoritebg">#FFCCCCCC</color>
+    <color name="favoritebg">#DDDDDD</color>
 
 </resources>

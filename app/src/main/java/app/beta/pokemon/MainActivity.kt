@@ -13,18 +13,12 @@ class MainActivity : AppCompatActivity() {
             private set
     }
 
-    lateinit var viewBinding: MainActivityBinding
+    private lateinit var viewBinding: MainActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewBinding = MainActivityBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
         instance = this
-//        if (savedInstanceState == null) {
-//            supportFragmentManager.beginTransaction()
-//                .replace(R.id.container, PokemonListFragment.newInstance())
-//                .commitNow()
-//        }
-
     }
 }

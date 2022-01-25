@@ -1,5 +1,7 @@
 package app.beta.pokemon.appdi
 
+import app.beta.pokemon.MainActivity
+import app.beta.pokemon.R
 import com.apollographql.apollo3.ApolloClient
 import dagger.Module
 import dagger.Provides
@@ -16,7 +18,7 @@ class NetworkModule {
     @Provides
     fun providesApolloClient(): ApolloClient {
         return ApolloClient.Builder()
-            .serverUrl("https://beta.pokeapi.co/graphql/v1beta")
+            .serverUrl(MainActivity.instance.getString(R.string.api_url))
             .build()
     }
 

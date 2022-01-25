@@ -1,0 +1,21 @@
+query getPokemonDetail($id: Int!) {
+    pokemon_v2_pokemon(where: { id: { _eq: $id } }) {
+        id
+        name
+        pokemon_v2_pokemonspecy {
+            pokemon_v2_pokemonhabitat {
+                name
+            }
+        }
+        pokemon_v2_pokemonabilities {
+            pokemon_v2_ability {
+                name
+            }
+        }
+        pokemon_v2_pokemontypes {
+            pokemon_v2_type {
+                name
+            }
+        }
+    }
+}

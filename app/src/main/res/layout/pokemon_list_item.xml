@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/pokemon_blue">
+    android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView"
@@ -51,6 +50,7 @@
                         android:id="@+id/pokemon_sprite"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@string/pokemon_sprite"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -68,7 +68,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif"
-                android:text="#"
+                android:text="@string/static_hashtag"
                 android:textColor="@color/pokemon_red"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@id/materialCardView"
@@ -79,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="pokemon_id"
+                android:text="@string/placeholder_pokemon_id"
                 android:textColor="@color/pokemon_red"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:elegantTextHeight="false"
                 android:freezesText="false"
-                android:text="pokemon_name"
+                android:text="@string/placeholder_pokemon_name"
                 android:textAlignment="textStart"
                 android:textAllCaps="true"
                 android:textColor="@color/pokemon_blue"

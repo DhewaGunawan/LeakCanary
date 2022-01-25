@@ -11,14 +11,33 @@
         android:label="pokemon_list_fragment"
         tools:layout="@layout/pokemon_list_fragment">
         <action
-            android:id="@+id/action_pokemonListFragment2_to_pokemonDetailFragment"
+            android:id="@+id/openDetail"
             app:destination="@id/pokemonDetailFragment" />
+        <action
+            android:id="@+id/openFavorites"
+            app:destination="@id/pokemonFavoriteFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/pokemonDetailFragment"
         android:name="app.beta.pokemon.ui.pokemondetail.PokemonDetailFragment"
         android:label="pokemon_detail_fragment"
-        tools:layout="@layout/pokemon_detail_fragment" />
+        tools:layout="@layout/pokemon_detail_fragment">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonFavoriteFragment"
+        android:name="app.beta.pokemon.ui.pokemonfavorite.PokemonFavoriteFragment"
+        android:label="pokemon_favorite_fragment"
+        tools:layout="@layout/pokemon_favorite_fragment">
+        <action
+            android:id="@+id/openDetail"
+            app:destination="@id/pokemonDetailFragment" />
+    </fragment>
 
 </navigation>
