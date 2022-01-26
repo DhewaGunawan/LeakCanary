@@ -38,6 +38,9 @@ You can add pokemon to your favorite list, by interact with "Add to Favorites" b
 and you can also remove pokemon from your favorite list, by interact with "Remove from Favorites" button.
 
 ---
+Get .apk file from [here](https://drive.google.com/file/d/10z24JoqAZaUVdpvvXiA6FdU57fCDnY3B/view?usp=sharing)
+
+---
 ## Additional Notes
 
 Future Development:
