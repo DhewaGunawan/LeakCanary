@@ -16,7 +16,6 @@ import app.beta.pokemon.R
 import app.beta.pokemon.databinding.PokemonListFragmentBinding
 import coil.load
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
@@ -28,6 +27,7 @@ class PokemonListFragment : Fragment() {
     }
 
     private val viewModel: PokemonListViewModel by viewModels()
+
     private lateinit var viewBinding: PokemonListFragmentBinding
     private lateinit var pokemonListAdapter: PokemonListAdapter
 
@@ -140,6 +140,10 @@ class PokemonListFragment : Fragment() {
                 }
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
     }
 
 }
