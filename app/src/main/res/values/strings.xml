@@ -2,7 +2,7 @@
     <string name="app_name">Pokemon</string>
     <string name="api_url">https://beta.pokeapi.co/graphql/v1beta</string>
     <string name="sprite_url">https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/%1$d.png</string>
-    <string name="by_betavian">by BETAVIAN</string>
+    <string name="by_betavian">by BETAVIAN remodel by DHEWA</string>
     <string name="placeholder_number">000</string>
     <string name="static_hashtag">#</string>
     <string name="static_add_to_favorite">Add to Favorite</string>
@@ -20,4 +20,7 @@
     <string name="pokemon_sprite">pokemon sprite</string>
     <string name="favorites">favorites</string>
     <string name="placeholder_item_name">item_name</string>
+    <string name="id_pokemon_super">999</string>
+    <string name="habitat_pokemon_super">someone said he can live anywhere, in all extreme conditions and places</string>
+    <string name="pokemon_super_name">Hah.. Apa?</string>
 </resources>

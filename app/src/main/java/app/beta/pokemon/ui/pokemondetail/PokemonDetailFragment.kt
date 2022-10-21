@@ -14,7 +14,6 @@ import app.beta.pokemon.repository.db.favorite.Favorite
 import coil.load
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint

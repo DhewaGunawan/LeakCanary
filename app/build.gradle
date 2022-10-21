@@ -41,6 +41,7 @@ android {
     }
     compileSdkVersion 31
     buildToolsVersion '31.0.0'
+    namespace 'app.beta.pokemon'
 }
 
 dependencies {

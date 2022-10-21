@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         viewBinding = MainActivityBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+        supportActionBar?.hide()
         instance = this
 
         analytics = FirebaseAnalytics.getInstance(baseContext)

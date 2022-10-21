@@ -1,6 +1,7 @@
 package app.beta.pokemon.ui.pokemonlist
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +12,9 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.lifecycle.whenStarted
 import androidx.navigation.Navigation
+import app.beta.pokemon.R
 import app.beta.pokemon.databinding.PokemonListFragmentBinding
+import coil.load
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.collectLatest
@@ -40,6 +43,18 @@ class PokemonListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         populatePokemon()
         pokemonListAdapter = PokemonListAdapter()
+        viewBinding.apply {
+            cardViewTop.apply {
+                pokemonSprite.load(R.drawable.ic_pokemon_super)
+                pokemonId.text = "999"
+                pokemonName.text = "Hah.. Apa?"
+                setOnClickListener {
+                    Log.d("Testing", "onViewCreated: masuk openSuperDetail")
+                    Navigation.findNavController(viewBinding.root)
+                        .navigate(PokemonListFragmentDirections.openSuperDetail())
+                }
+            }
+        }
         viewBinding.pokemonList.adapter = pokemonListAdapter
         viewBinding.favoriteCollection.setOnClickListener {
             Navigation.findNavController(viewBinding.root)
