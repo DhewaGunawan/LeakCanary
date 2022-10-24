@@ -46,8 +46,8 @@ class PokemonListFragment : Fragment() {
         viewBinding.apply {
             cardViewTop.apply {
                 pokemonSprite.load(R.drawable.ic_pokemon_super)
-                pokemonId.text = "999"
-                pokemonName.text = "Hah.. Apa?"
+                pokemonId.text = context.getString(R.string.id_pokemon_super)
+                pokemonName.text = context.getString(R.string.name_super)
                 setOnClickListener {
                     Log.d("Testing", "onViewCreated: masuk openSuperDetail")
                     Navigation.findNavController(viewBinding.root)
