@@ -28,21 +28,27 @@ class PokemonListFragment : Fragment() {
 
     private val viewModel: PokemonListViewModel by viewModels()
 
-    private lateinit var viewBinding: PokemonListFragmentBinding
-    private lateinit var pokemonListAdapter: PokemonListAdapter
+//    private lateinit var viewBinding: PokemonListFragmentBinding
+    private var _binding: PokemonListFragmentBinding? = null
+    private val viewBinding get() = _binding!!
+
+//    private lateinit var pokemonListAdapter: PokemonListAdapter
+    private var _pokemonListAdapter: PokemonListAdapter? = null
+    private val pokemonListAdapter get() = _pokemonListAdapter!!
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        viewBinding = PokemonListFragmentBinding.inflate(layoutInflater)
+        _binding = PokemonListFragmentBinding.inflate(layoutInflater)
         return viewBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         populatePokemon()
-        pokemonListAdapter = PokemonListAdapter()
+        _pokemonListAdapter = PokemonListAdapter()
         viewBinding.apply {
             cardViewTop.apply {
                 pokemonSprite.load(R.drawable.ic_pokemon_super)
@@ -144,6 +150,8 @@ class PokemonListFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        _binding = null
+        _pokemonListAdapter = null
     }
 
 }

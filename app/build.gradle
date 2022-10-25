@@ -45,6 +45,10 @@ android {
 }
 
 dependencies {
+    def appCenterSdkVersion = '4.3.1'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.9.1'
     androidTestImplementation "com.squareup.leakcanary:leakcanary-android-instrumentation:2.9.1"
 
